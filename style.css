@@ -1,0 +1,443 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #f2f2f2;
+    font-size:18px ;
+  
+    
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #333; 
+    z-index: 100;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.navbar{
+    justify-content: space-between;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 0;
+    /* transition: 0.2s; */
+}
+.nav-links{
+    list-style: none;
+    gap: 30px;
+}
+
+.navbar a:hover{
+    color: #ddddddd7;
+    font-size: 18px;
+    transition-behavior:  smooth;
+}
+
+.homepage{
+    position: relative;
+    background-image: url(Main.jpg);
+    /* background-position: center; */
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+
+.homepage .content{
+    height: 75%;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 180px;
+}
+
+.homepage .text h1{
+     font-size: 42px;
+     font-weight: 700;
+     text-align: center; 
+     margin-bottom: 10px;
+}
+
+.homepage .text p{
+    font-size: 18px;
+     font-weight: 400;
+     text-align: center;
+}
+
+.homepage::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    /* background: rgba(0, 0 ,0, 0.2); */
+}
+
+.homepage a{
+    color: #333;
+    text-decoration: none;
+    background-color: #fff;
+    /* background-color: transparent; */
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    margin-top: 20px;
+    box-shadow: rgba(0, 0 ,0, 0.3);
+    transition: 0.3s;
+
+}
+
+
+.homepage a:hover{
+    color: #fff;
+    background-color:rgba(255, 255 ,255, 0.3) ;
+}
+
+
+section{
+    padding-top: 60px;
+
+}
+
+.section-title{
+    text-align: center;
+}
+
+section h2{
+    font-size: 2rem;
+}
+
+
+section .cards{
+    margin-top: 30px;
+    /* margin-left: 150px; */
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0 120px;
+}
+
+/* section .card :hover {
+       height: 50px;
+        transition: all 0.3s ease;
+}
+section .card img:hover {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+} */
+
+section .card{
+    width: calc(100% / 3 - 80px);
+    text-align: center;
+    list-style: none;
+    background-color: #fff;
+    padding: 40px 5px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0 ,0, 0.04);
+    margin-bottom: 40px;
+}
+
+section .card img{
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+   
+}
+
+section .card p{
+    font-size: 16px;
+}
+
+.portfolio .card{
+    padding: 0 0 20px;
+}
+
+.portfolio .card img{
+    height: 240px;
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+
+.portfolio .cards{
+    padding: 0 30px;
+}
+
+.about .info{
+    margin-top:30px ;
+    padding: 0 10px;
+}
+.about h3{
+    margin:30px 0 10px ;
+}
+
+
+.container .info1{
+    background-color: rgb(79, 139, 79);
+    color: rgb(28, 63, 28);
+    height: 150px;
+    font-size: 28px;
+    font-style: italic;
+    font-family: "Satisfy", cursive;
+    text-align: center;
+    padding-top: 5px;
+    margin: 20px 0;
+
+}
+
+.container2 .section-title {
+    margin: 70px 0 50px;
+}
+
+
+.container2 .partner{
+    flex-wrap: wrap;
+}
+
+
+section .partners{
+    margin-top: 30px;
+    margin-left: 40px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* padding: 0 120px; */
+}
+.container2 .partner{
+    /* margin: 0 100px; */
+    /* width: calc(100% / 2 - 60px); */
+    list-style: none;
+    text-align: center;
+
+}
+
+/* .container2 */
+
+.container2 .partner img{
+    height: 100px;
+    width: 200px;
+
+  }
+
+.container2 .third img{
+    height: 100px;
+    width: 200px;
+    margin-top: 20px;
+    /* margin-left: 200px; */
+  }
+
+.container2  .third{
+    /* margin-left: 100px; */
+    text-align: center;
+    
+}
+
+
+.contact .info{
+    margin: 50px 20px 0 140px;
+    font-size: 16px;
+}
+.contact .row .col{
+    padding: 0 10px;
+}
+
+.contact .form{
+    margin-left: 180px;
+    margin-top: 50px;
+    margin-right: 140px;
+    /* margin-bottom: 10px; */
+    width: 600px;
+
+}
+
+/* .contact .row{
+    margin-bottom: 20px;
+} */
+.contact .row .col p{
+    color: #333;
+    margin-bottom: 10px;
+
+}
+
+.contact .row .col p i{
+    margin-right: 10px;
+}
+
+
+.container3 .icon{
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: rgb(53, 209, 69);
+    margin: 0 0 5px 0 ;
+}
+
+.container3 .icon i{
+    padding: 12px 0 0 13px;
+} 
+
+.container3 h4{
+    margin-bottom:10px ;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+ .container4 h4{
+    margin:15px 0 0 0 ;
+    font-size: 20px;
+}
+
+.container4 p{
+    font-size: 16px;
+    margin-top: 10px;
+    line-height: 7px;
+} 
+
+
+
+.contact form input{
+    width: 100%;
+    height: 45px;
+    margin-bottom: 20px;
+    padding: 0 15px;
+    border: 1px solid #bfbfbf;
+} 
+
+
+
+.contact form textarea{
+    padding: 15px;
+    width: 100%;
+    height: 180px;
+    border: 2px solid #bfbfbf;
+}
+
+.contact form button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    background-color: #333;
+    cursor: pointer;
+    transition: 0.2s ;
+}
+
+.contact form button:hover{
+    background-color: #525252;
+}
+
+
+.footer .last{
+    background-color: #333;
+    height: 40px;
+    margin-top: 20px;
+    color: white;
+    padding-top: 5px;
+    padding-left: 150px;
+}
+
+#menu , #btn{
+    display: none;
+}
+
+@media (width < 860px){
+.navbar .nav-links{
+    position: fixed;
+    left: -100%;
+    top: 55px;
+    height: 100%;
+    display: block;
+    background: #333;
+    width: 300px;
+    padding-left: 60px;
+    padding-top: 30px;
+    transition: all 0.4s ease;
+}
+ 
+
+
+
+#menu:checked ~ .nav-links{
+    left: 0;
+}
+#btn{
+    display: block;
+    color: white;
+    cursor: pointer;
+}
+
+section .cards .card{
+    width: calc(100%/2 - 15px);
+}
+
+.contact .row{
+    flex-direction: column;
+}
+
+.contact .row .col{
+    width: 100%;
+}
+
+.container2 {
+   display: inline-block;
+    
+}
+
+.container .info1{
+    height: 300px;
+}
+header{
+    width: 100vw;
+}
+
+.homepage{
+    position: relative;
+    background-image: url(couple-tourists-enjoying-camping-mountains.jpg);
+    /* background-position: center; */
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+}
+
+@media (width < 560px){
+    section .cards .card{
+        width: 100%;
+    }
+
+    .container .info1{
+        height: 500px;
+    }
+}
